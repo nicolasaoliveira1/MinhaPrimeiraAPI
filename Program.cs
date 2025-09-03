@@ -65,7 +65,7 @@ app.MapDelete("/tarefas/{id:int}", (int id) =>
 //POST CREATE (cria uma nova tarefa)
 app.MapPost("/tarefas", (Tarefa entrada) =>
 {
-    if (entrada.Titulo == null)
+    if (entrada.Titulo is null)
     {
         return Results.BadRequest(new { erro = "Bote o título, porra!" });
     }
@@ -78,7 +78,15 @@ app.MapPost("/tarefas", (Tarefa entrada) =>
 });
 
 //PUT (editar uma tarefa)
+app.MapPut("tarefas/{id:int}", (int id, Tarefa entrada) =>
+{
+    var encontrada = tarefas.FirstOrDefault(p => p.Id == id);
+    if (encontrada is null) return Results.NotFound();
 
+    encontrada.Titulo = entrada.Titulo;
+    encontrada.Concluido = entrada.Concluido;
+    return Results.Ok(encontrada);
+});
 
 
 

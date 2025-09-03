@@ -31,3 +31,4 @@ C:\ULBRA\2025.2\BACKEND C#\MinhaPrimeiraAPI\obj\Debug\net8.0\refint\MinhaPrimeir
 C:\ULBRA\2025.2\BACKEND C#\MinhaPrimeiraAPI\obj\Debug\net8.0\MinhaPrimeiraAPI.pdb
 C:\ULBRA\2025.2\BACKEND C#\MinhaPrimeiraAPI\obj\Debug\net8.0\MinhaPrimeiraAPI.genruntimeconfig.cache
 C:\ULBRA\2025.2\BACKEND C#\MinhaPrimeiraAPI\obj\Debug\net8.0\ref\MinhaPrimeiraAPI.dll
+C:\ULBRA\2025.2\BACKEND C#\MinhaPrimeiraAPI\obj\Debug\net8.0\MinhaPrimeiraAPI.sourcelink.json
